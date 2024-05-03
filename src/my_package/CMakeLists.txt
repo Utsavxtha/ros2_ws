@@ -10,6 +10,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(example_interfaces REQUIRED)
+find_package(tutorial_interfaces REQUIRED)
 
 
 add_executable(my_node src/my_node.cpp)
@@ -26,10 +27,10 @@ add_executable(listener src/subscriber.cpp)
 ament_target_dependencies(listener rclcpp std_msgs)
 
 add_executable(server src/add_num_server.cpp)
-ament_target_dependencies(server rclcpp example_interfaces)
+ament_target_dependencies(server rclcpp tutorial_interfaces)
 
 add_executable(client src/client.cpp)
-ament_target_dependencies(client rclcpp example_interfaces)
+ament_target_dependencies(client rclcpp tutorial_interfaces)
 
 
 install(TARGETS
