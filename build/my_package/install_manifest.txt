@@ -1,4 +1,8 @@
 /home/utsavxth/ros2_ws/install/my_package/lib/my_package/my_node
+/home/utsavxth/ros2_ws/install/my_package/lib/my_package/listener
+/home/utsavxth/ros2_ws/install/my_package/lib/my_package/talker
+/home/utsavxth/ros2_ws/install/my_package/lib/my_package/server
+/home/utsavxth/ros2_ws/install/my_package/lib/my_package/client
 /home/utsavxth/ros2_ws/install/my_package/share/ament_index/resource_index/package_run_dependencies/my_package
 /home/utsavxth/ros2_ws/install/my_package/share/ament_index/resource_index/parent_prefix_path/my_package
 /home/utsavxth/ros2_ws/install/my_package/share/my_package/environment/ament_prefix_path.sh
