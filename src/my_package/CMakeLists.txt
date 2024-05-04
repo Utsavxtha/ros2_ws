@@ -32,6 +32,9 @@ ament_target_dependencies(server rclcpp tutorial_interfaces)
 add_executable(client src/client.cpp)
 ament_target_dependencies(client rclcpp tutorial_interfaces)
 
+add_executable(minimal_param_node src/cpp_parameters_node.cpp)
+ament_target_dependencies(minimal_param_node rclcpp)
+
 
 install(TARGETS
 my_node
@@ -39,8 +42,13 @@ listener
 talker
 server
 client
+minimal_param_node
   DESTINATION lib/${PROJECT_NAME})
 
+  install(
+  DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME}
+)
   
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
